@@ -30,8 +30,15 @@ export default function RootLayout({
         {/* フッター */}
         <footer className="bg-white border-t mt-8 p-4 text-center">
           <a 
+            href="/terms" 
+            className="text-gray-700 hover:text-blue-500 transition mx-2"
+          >
+            ご利用規約
+          </a>
+          
+          <a 
             href="/privacy-policy" 
-            className="text-gray-700 hover:text-blue-500 transition"
+            className="text-gray-700 hover:text-blue-500 transition mx-2"
           >
             プライバシーポリシー
           </a>
