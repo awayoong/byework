@@ -1,4 +1,3 @@
-// layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
 import React from 'react';
@@ -19,12 +18,24 @@ export default function RootLayout({
         {/* ナビゲーションメニュー */}
         <nav className="fixed top-0 w-full bg-white shadow-md z-10">
           <div className="container mx-auto p-4 flex justify-end space-x-6">
-            <a href="#section1" className="text-gray-700 hover:text-blue-500 transition">Top</a>
-            <a href="#section2" className="text-gray-700 hover:text-blue-500 transition">料金プラン</a>
-            <a href="#section3" className="text-gray-700 hover:text-blue-500 transition">バイバイトの特徴</a>
+            <a href="/#section1" className="text-gray-700 hover:text-blue-500 transition">Top</a>
+            <a href="/#section2" className="text-gray-700 hover:text-blue-500 transition">料金プラン</a>
+            <a href="/#section3" className="text-gray-700 hover:text-blue-500 transition">バイバイトの特徴</a>
           </div>
         </nav>
+
+        {/* メインコンテンツ */}
         <main className="pt-20">{children}</main>
+
+        {/* フッター */}
+        <footer className="bg-white border-t mt-8 p-4 text-center">
+          <a 
+            href="/privacy-policy" 
+            className="text-gray-700 hover:text-blue-500 transition"
+          >
+            プライバシーポリシー
+          </a>
+        </footer>
       </body>
     </html>
   );
