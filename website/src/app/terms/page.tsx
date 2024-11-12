@@ -2,7 +2,7 @@ import React from 'react';
 
 const TermsOfService: React.FC = () => {
   return (
-    <div className="p-8">
+    <div className="p-8 max-w-screen-lg mx-auto text-gray-800">
       <h1 className="text-3xl font-bold mb-6">退職代行サービス利用規約</h1>
 
       <section className="mb-8">

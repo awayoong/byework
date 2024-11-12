@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       {/* セクション */}
-      <section id="section1" className="h-screen flex flex-col items-center justify-center bg-blue-50 text-gray-900 shadow-md">
+      <section id="section1" className="h-screen flex flex-col items-center justify-center bg-blue-50 text-gray-800 shadow-md">
         <h2 className="text-4xl font-bold mb-4">Top</h2>
         <p className="text-lg">アルバイト退職を専門にサポートします。</p>
         <Image
@@ -21,7 +21,7 @@ export default function Home() {
         />
       </section>
 
-      <section id="section2" className="h-screen bg-white text-gray-900 shadow-md py-16">
+      <section id="section2" className="h-screen bg-white text-gray-800 shadow-md py-16">
         <h2 className="text-center text-4xl font-bold mb-8">料金プラン</h2>
         <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-10">
           <div className="p-6 text-center bg-gray-100 rounded-lg shadow-lg">
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="section3" className="h-screen bg-blue-50 text-gray-900 shadow-md py-16">
+      <section id="section3" className="h-screen bg-blue-50 text-gray-800 shadow-md py-16">
         <h2 className="text-center text-4xl font-bold mb-8">バイバイトの特徴</h2>
         <ul className="list-disc list-inside space-y-2 mx-auto max-w-md text-lg">
           <li>即日退職可能！</li>
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="section10" className="h-screen flex flex-col items-center justify-center bg-white text-gray-900 shadow-md">
+      <section id="section10" className="h-screen flex flex-col items-center justify-center bg-white text-gray-800 shadow-md">
         <h2 className="text-4xl font-bold mb-4">セクション 3</h2>
         <p className="text-lg">このセクションのコンテンツです。</p>
       </section>
