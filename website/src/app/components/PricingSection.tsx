@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import cardsImage from "../images/card_VISA_MASTER_AMEX.gif";
 
 export default function PricingSection() {
   return (
@@ -22,7 +21,7 @@ export default function PricingSection() {
       <div className="text-center my-16">
         <h4 className="text-3xl font-bold mb-8">豊富な決済手段</h4>
         <Image
-          src={cardsImage}
+          src={"/images/card_VISA_MASTER_AMEX.gif"}
           alt="決済可能なクレジットカード一覧"
           width={500}
           height={300}

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import yameoImage from "../images/ヤメオ_バイバイト.jpg";
 
 export default function TopSection() {
   return (
@@ -11,7 +10,7 @@ export default function TopSection() {
       <h2 className="text-4xl font-bold mb-4">Top</h2>
       <p className="text-lg">アルバイト退職を専門にサポートします。</p>
       <Image
-        src={yameoImage}
+        src={"/images/ヤメオ_バイバイト.jpg"}
         alt="ヤメオの画像"
         width={500}
         height={300}

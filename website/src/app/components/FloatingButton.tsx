@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image"; // next/image をインポート
-import yamekoImage from "../images/ヤメ子_バイバイト.jpg";
+import Image from "next/image";
 
 export default function FloatingButton() {
   return (
@@ -28,8 +27,8 @@ export default function FloatingButton() {
       {/* マスコット画像 */}
       <div className="flex-shrink-0">
         <Image
-          src={yamekoImage}
-          alt="マスコット画像"
+          src={"/images/ヤメ子_バイバイト.jpg"}
+          alt="ヤメ子画像"
           width={120} // 基本サイズ
           height={120}
           className="rounded-full shadow-lg md:w-24 md:h-24" // レスポンシブ対応
