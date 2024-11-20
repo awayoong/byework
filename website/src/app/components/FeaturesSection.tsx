@@ -6,8 +6,10 @@ export default function FeaturesSection() {
       id="section3"
       className="bg-blue-50 text-gray-800 shadow-md py-16"
     >
-      <h2 className="text-center text-4xl font-bold mb-8">バイバイトの特徴</h2>
-      <ul className="list-disc list-inside space-y-2 mx-auto max-w-md text-lg">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-8">
+        バイバイトの特徴
+      </h2>
+      <ul className="list-disc list-inside space-y-2 mx-auto max-w-md text-base md:text-lg">
         <li>即日退職可能！</li>
         <li>最短10分で代行開始</li>
         <li>入社0日から対応可能</li>

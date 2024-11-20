@@ -5,9 +5,11 @@ export default function TopSection() {
   return (
     <section
       id="section1"
-      className="flex flex-col items-center justify-center bg-blue-50 text-gray-800 shadow-md py-16"
+      className="flex flex-col items-center justify-center bg-blue-50 text-gray-800 shadow-md py-8"
     >
-      <h2 className="text-4xl font-bold mb-4">Top</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center my-8">
+        Top
+      </h2>
       <p className="text-lg">アルバイト退職を専門にサポートします。</p>
       <Image
         src={"/images/ヤメオ_バイバイト.jpg"}
