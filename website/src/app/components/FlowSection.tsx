@@ -43,7 +43,7 @@ export default function FlowSection() {
               key={index}
               className="flex flex-col md:flex-row items-start md:items-center bg-white rounded-lg shadow-md p-6 md:p-8"
             >
-              <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
+              <div className="flex-shrink-0 w-9 h-9 md:w-12 md:h-12 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg md:text-xl">
                 {index + 1}
               </div>
               <div className="ml-4 mt-4 md:mt-0">
