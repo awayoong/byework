@@ -31,7 +31,7 @@ export default function FlowSection() {
   return (
     <section 
       id="section4" 
-      className="bg-white text-gray-800 shadow-md py-16"
+      className="text-gray-800 shadow-md py-16"
     >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-8">

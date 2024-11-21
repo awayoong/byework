@@ -5,7 +5,7 @@ export default function TopSection() {
   return (
     <section
       id="section1"
-      className="flex flex-col items-center justify-center bg-blue-50 text-gray-800 shadow-md py-8"
+      className="flex flex-col items-center justify-center text-gray-800 py-8"
     >
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center my-8">
         Top

@@ -3,14 +3,33 @@ import { FaCheckCircle } from "react-icons/fa"; // アイコンを使用する�
 
 export default function FeaturesSection() {
   return (
-    <section id="section3" className="bg-blue-50 text-gray-800 py-16">
+    <section id="section3" className="text-gray-800 py-16">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
         バイバイトの特徴
       </h2>
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* 特徴カード1 */}
+
+          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+            <div className="flex items-center mb-4">
+              <FaCheckCircle className="text-green-500 text-xl mr-3" />
+              <h3 className="text-xl font-semibold">業界最安値</h3>
+            </div>
+            <p className="text-base text-gray-600">
+              アルバイト退職専門だからできる値段。
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+            <div className="flex items-center mb-4">
+              <FaCheckCircle className="text-green-500 text-xl mr-3" />
+              <h3 className="text-xl font-semibold">学割対応あり</h3>
+            </div>
+            <p className="text-base text-gray-600">
+              学生が少しでも気軽に利用できるよう学割を設けています。
+            </p>
+          </div>
+
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-green-500 text-xl mr-3" />
@@ -21,7 +40,6 @@ export default function FeaturesSection() {
             </p>
           </div>
 
-          {/* 特徴カード2 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-green-500 text-xl mr-3" />
@@ -32,18 +50,16 @@ export default function FeaturesSection() {
             </p>
           </div>
 
-          {/* 特徴カード3 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-green-500 text-xl mr-3" />
-              <h3 className="text-xl font-semibold">入社0日から対応可能</h3>
+              <h3 className="text-xl font-semibold">出勤１日目から対応可能</h3>
             </div>
             <p className="text-base text-gray-600">
               入社してからすぐに退職手続きを始められます。
             </p>
           </div>
 
-          {/* 特徴カード4 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-green-500 text-xl mr-3" />
@@ -54,14 +70,13 @@ export default function FeaturesSection() {
             </p>
           </div>
 
-          {/* 特徴カード5 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-green-500 text-xl mr-3" />
-              <h3 className="text-xl font-semibold">内定辞退のご依頼も承り可能</h3>
+              <h3 className="text-xl font-semibold">面接通過後の辞退連絡</h3>
             </div>
             <p className="text-base text-gray-600">
-              内定を辞退したい場合もご依頼をお受けいたします。
+              就業を辞退したい場合もご依頼をお受けいたします。
             </p>
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function RootLayout({
         </nav>
 
         {/* メインコンテンツ */}
-        <main className="pt-14">{children}</main>
+        <main className="pt-14 bg-white">{children}</main>
 
         {/* フッター */}
         <footer className="bg-white border-t mt-8 p-4 text-center">
