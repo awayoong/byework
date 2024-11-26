@@ -20,30 +20,3 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-@layer utilities {
-  .nested-list {
-    counter-reset: main-counter; /* 主カウンターをリセット */
-  }
-  .nested-list > li {
-    counter-increment: main-counter; /* 主カウンターを増加 */
-    position: relative;
-  }
-  .nested-list > li::before {
-    content: counter(main-counter) ". "; /* 主カウンターを表示 */
-    position: absolute;
-    left: -1.5rem; /* 適切な位置に調整 */
-  }
-  .nested-list ol {
-    counter-reset: sub-counter; /* サブカウンターをリセット */
-  }
-  .nested-list ol > li {
-    counter-increment: sub-counter; /* サブカウンターを増加 */
-    position: relative;
-  }
-  .nested-list ol > li::before {
-    content: counter(main-counter) "-" counter(sub-counter) ". "; /* 1-1形式を表示 */
-    position: absolute;
-    left: -2rem; /* 適切な位置に調整 */
-  }
-}
