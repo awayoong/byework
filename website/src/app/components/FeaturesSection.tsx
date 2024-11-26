@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa"; // アイコンを使用する場合
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function FeaturesSection() {
   return (

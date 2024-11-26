@@ -75,7 +75,6 @@ const TermsOfService: React.FC = () => {
         </ol>
       </section>
 
-      {/* 以下の章を追加して継続できます */}
       <section className="mb-8">
         <h3 className="text-xl font-semibold mb-4">第６条（本サービスの利用方法）</h3>
         <ol className="list-decimal pl-6">

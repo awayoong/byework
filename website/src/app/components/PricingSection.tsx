@@ -16,11 +16,6 @@ export default function PricingSection() {
           <p className="text-lg md:text-xl font-bold mb-6 text-gray-800">
             ¥5,000 <span className="text-sm text-gray-500">+ 税</span>
           </p>
-          <ul className="space-y-3 text-gray-700">
-            <li>限定の学生特典あり</li>
-            <li>フルサポートプラン</li>
-            <li>即日対応</li>
-          </ul>
         </div>
 
         {/* プランカード: 非学生 */}
@@ -31,11 +26,6 @@ export default function PricingSection() {
           <p className="text-lg md:text-xl font-bold mb-6 text-gray-800">
             ¥8,000 <span className="text-sm text-gray-500">+ 税</span>
           </p>
-          <ul className="space-y-3 text-gray-700">
-            <li>フルサポートプラン</li>
-            <li>カスタマイズ可能</li>
-            <li>24時間対応</li>
-          </ul>
         </div>
       </div>
 
