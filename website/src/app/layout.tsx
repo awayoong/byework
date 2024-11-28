@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import React from 'react';
 import Image from 'next/image';
+import { notoJP, mPlus1p } from './utiles/fonts';
 
 export const metadata: Metadata = {
   title: '退職代行Byeバイト | アルバイト専門',
@@ -14,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
-      <body className="bg-white text-gray-800">
+    <html lang="ja" className={`${notoJP.variable} ${mPlus1p.variable}`}>
+      <body className="bg-white text-gray-800 font-notojp">
         {/* ナビゲーションメニュー */}
         <nav className="fixed top-0 w-full bg-white shadow-md z-10">
           <div className="container mx-auto p-4 flex items-center justify-between">
