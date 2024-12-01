@@ -7,13 +7,14 @@ import { FiMenu, FiX } from 'react-icons/fi';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // スクロール制御
+  // メニューの状態変更時にスクロール制御
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
+
     return () => {
       document.body.style.overflow = '';
     };
@@ -59,29 +60,31 @@ export default function Header() {
       </nav>
 
       {/* メニュー（モバイル版） */}
-      {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-br from-red-300 to-red-600 text-white flex flex-col items-center justify-center space-y-6 z-20">
-          {/* 閉じるボタン */}
-          <button
-            className="absolute top-4 right-4 text-white focus:outline-none z-50"
-            onClick={() => setIsMenuOpen(false)}
-            aria-label="メニューを閉じる"
-          >
-            <FiX size={32} />
-          </button>
+      <div
+        className={`fixed inset-0 bg-gradient-to-br from-red-300 to-red-600 text-white flex flex-col items-center justify-center space-y-6 z-20 transform transition-all duration-300 ${
+          isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+        }`}
+      >
+        {/* 閉じるボタン */}
+        <button
+          className="absolute top-4 right-4 text-white focus:outline-none z-50"
+          onClick={() => setIsMenuOpen(false)}
+          aria-label="メニューを閉じる"
+        >
+          <FiX size={32} />
+        </button>
 
-          {['Top', '料金プラン', 'Byeバイトの特徴', 'サービスの流れ'].map((text, index) => (
-            <a
-              key={index}
-              href={`/#section${index + 1}`}
-              className="text-lg font-semibold hover:underline"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {text}
-            </a>
-          ))}
-        </div>
-      )}
+        {['Top', '料金プラン', 'Byeバイトの特徴', 'サービスの流れ'].map((text, index) => (
+          <a
+            key={index}
+            href={`/#section${index + 1}`}
+            className="text-lg font-semibold hover:underline"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {text}
+          </a>
+        ))}
+      </div>
     </>
   );
 }
