@@ -37,7 +37,7 @@ export default function Header() {
 
           {/* ハンバーガーメニュー */}
           <button
-            className="md:hidden text-white bg-red-500 hover:bg-red-600 transition rounded-full p-2 focus:outline-none shadow-lg fixed top-4 right-4"
+            className="md:hidden text-white bg-red-500 hover:bg-red-400 transition rounded-full p-2 focus:outline-none shadow-lg fixed top-4 right-4"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? 'メニューを閉じる' : 'メニューを開く'}
           >
@@ -50,7 +50,7 @@ export default function Header() {
               <a
                 key={index}
                 href={`/#section${index + 1}`}
-                className="bg-red-500 text-white hover:bg-red-600 transition rounded-full px-4 py-2 text-sm font-semibold shadow"
+                className="bg-red-500 text-white hover:bg-red-400 transition rounded-full px-4 py-2 text-sm font-semibold shadow"
               >
                 {text}
               </a>
