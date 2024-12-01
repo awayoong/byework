@@ -3,72 +3,80 @@ import Image from "next/image";
 
 export default function PricingSection() {
   return (
-    <section id="section2" className="py-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-        料金プラン
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <section id="section2" className="py-24">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold">料金プラン</h2>
+        <p className="text-lg my-8">学生の方はオトクな学割が適用されます！</p>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto px-4">
         {/* プランカード: 学生 */}
-        <div className="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4 text-blue-600">
-            学生プラン
-          </h3>
-          <p className="text-lg md:text-xl font-bold mb-6 text-gray-800">
-            ¥5,000 <span className="text-sm text-gray-500">+ 税</span>
+        <div className="relative rounded-3xl shadow-lg shadow-red-200 border border-red-300 flex-1 p-10 md:p-12">
+          {/* デコレーションアイコン */}
+          <div className="absolute top-4 right-4 w-16 h-16 bg-red-300 rounded-full flex items-center justify-center">
+            <Image
+              src="/images/"
+              alt="Student Icon"
+              width={40}
+              height={40}
+            />
+          </div>
+          <h3 className="text-3xl font-bold text-red-600 mb-4">学生プラン</h3>
+          <p className="text-4xl font-bold mb-4">
+            ¥5,000 <span className="text-lg text-gray-500">+ 税</span>
+          </p>
+          <p className="font-bold text-red-700 bg-red-200 px-6 py-2 rounded-full inline-block">
+            学割実施中！今だけ特別価格！
           </p>
         </div>
 
         {/* プランカード: 非学生 */}
-        <div className="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4 text-blue-600">
-            一般プラン
-          </h3>
-          <p className="text-lg md:text-xl font-bold mb-6 text-gray-800">
-            ¥8,000 <span className="text-sm text-gray-500">+ 税</span>
+        <div className="relative bg-white rounded-3xl shadow-lg shadow-red-200 border border-gray-200 flex-1 p-10 md:p-12">
+          {/* デコレーションアイコン */}
+          <div className="absolute top-4 right-4 w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center">
+            <Image
+              src="/images/"
+              alt="General Icon"
+              width={40}
+              height={40}
+            />
+          </div>
+          <h3 className="text-3xl font-bold text-red-600 mb-4">一般プラン</h3>
+          <p className="text-4xl font-bold mb-4">
+            ¥8,000 <span className="text-lg text-gray-500">+ 税</span>
+          </p>
+          <p className="">
+            業界最安値！
           </p>
         </div>
       </div>
 
       <div className="text-center mt-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-          豊富な決済手段
+        <h2 className="text-2xl md:text-3xl font-bold">
+          お支払い方法
         </h2>
+        <p className="my-8">
+          クレジットカード、電子マネーなど豊富な決済手段に対応しています。
+        </p>
         <div className="flex flex-wrap justify-center items-center gap-6">
-          <Image
-            src={"/images/visa.png"}
-            alt="VISA Card"
-            width={150}
-            height={90}
-            className="md:w-40 md:h-auto"
-          />
-          <Image
-            src={"/images/master.png"}
-            alt="MasterCard"
-            width={150}
-            height={90}
-            className="md:w-40 md:h-auto"
-          />
-          <Image
-            src={"/images/amex.png"}
-            alt="American Express Card"
-            width={150}
-            height={90}
-            className="md:w-40 md:h-auto"
-          />
-          <Image
-            src={"/images/gpay.png"}
-            alt="Google Pay"
-            width={150}
-            height={90}
-            className="md:w-40 md:h-auto"
-          />
-          <Image
-            src={"/images/applepay.svg"}
-            alt="Apple Pay"
-            width={150}
-            height={90}
-            className="md:w-40 md:h-auto"
-          />
+          {[
+            { src: "/images/visa.png", alt: "VISA Card", label: "VISA" },
+            { src: "/images/master.png", alt: "MasterCard", label: "MasterCard" },
+            { src: "/images/amex.png", alt: "American Express Card", label: "Amex" },
+            { src: "/images/gpay.png", alt: "Google Pay", label: "Google Pay" },
+            { src: "/images/applepay.svg", alt: "Apple Pay", label: "Apple Pay" },
+          ].map((method, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <Image
+                src={method.src}
+                alt={method.alt}
+                width={80}
+                height={50}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-gray-600 mt-2">{method.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

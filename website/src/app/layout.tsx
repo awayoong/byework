@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className={`${notoJP.variable} ${mPlus1p.variable}`}>
-      <body className="bg-white text-gray-800 font-notojp">
+      <body className="bg-white text-gray-700 font-notojp">
         <Header />
         <main className="pt-20">{children}</main>
         <footer className="bg-white border-t mt-8 p-4 text-center">

@@ -37,7 +37,7 @@ export default function Header() {
 
           {/* ハンバーガーメニュー */}
           <button
-            className="md:hidden text-white bg-red-500 hover:bg-red-400 transition rounded-full p-2 focus:outline-none shadow-lg fixed top-4 right-4"
+            className="md:hidden text-white bg-red-500 hover:bg-red-400 transition rounded-full p-2 focus:outline-none shadow-lg fixed top-4 right-4 z-10"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? 'メニューを閉じる' : 'メニューを開く'}
           >
