@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="md:fixed md:top-0 w-full bg-white shadow-md z-10 md:flex md:items-center md:justify-between">
+      <nav className="md:fixed w-full bg-white shadow-md z-10 md:flex md:items-center md:justify-between">
         <div className="container mx-auto p-4 flex items-center justify-between">
           {/* ロゴ */}
           <a href="/" className="flex items-center">

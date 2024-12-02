@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="ja" className={`${notoJP.variable} ${mPlus1p.variable}`}>
       <body className="bg-white text-gray-700 font-notojp">
         <Header />
-        <main className="pt-20">{children}</main>
+        <main className="md:pt-20">{children}</main>
         <footer className="bg-white border-t mt-8 p-4 text-center">
           <a
             href="/terms"
