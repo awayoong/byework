@@ -3,12 +3,9 @@ import Image from "next/image";
 
 export default function FloatingButton() {
   return (
-    <div
-      className="fixed bottom-4 right-4 flex items-center space-x-4"
-      style={{ zIndex: 1000 }}
-    >
+    <div className="fixed bottom-4 right-4 flex items-center space-x-4 z-10">
       {/* 四角形ボタン部分 */}
-      <div className="relative bg-white text-gray-800 p-4 rounded-lg shadow-2xl max-w-xs md:max-w-sm">
+      <div className="relative bg-white p-4 rounded-lg shadow-2xl max-w-xs md:max-w-sm">
         {/* 内容 */}
         <div className="text-center">
           <p className="text-sm md:text-base font-bold mb-1">受付時間 9時-24時</p>
@@ -33,7 +30,7 @@ export default function FloatingButton() {
           height={120}
           className="rounded-full shadow-lg md:w-24 md:h-24" // レスポンシブ対応
         />
-        <p className="text-gray-800 text-center text-sm md:text-base font-bold mb-1">ヤメ子</p>
+        <p className="text-center text-sm md:text-base font-bold mb-1">ヤメ子</p>
       </div>
     </div>
   );
