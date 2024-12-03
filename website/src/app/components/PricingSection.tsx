@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PricingSection() {
   return (
-    <section id="section2" className="py-24">
+    <section id="price" className="py-24">
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl font-bold">料金プラン</h2>
         <p className="text-lg my-8">学生の方はオトクな学割が適用されます。</p>

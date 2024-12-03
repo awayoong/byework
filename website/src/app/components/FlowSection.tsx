@@ -24,10 +24,7 @@ export default function FlowSection() {
   ];
 
   return (
-    <section 
-      id="section4" 
-      className="shadow-md py-24"
-    >
+    <section id="flow" className="py-24">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center">
           退職代行サービスの流れ

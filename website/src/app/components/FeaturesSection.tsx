@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function FeaturesSection() {
   return (
-    <section id="section3" className="py-24">
+    <section id="features" className="py-24">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
         バイバイトの特徴
       </h2>

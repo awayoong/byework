@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function TopSection() {
   return (
-    <section id="section1" className="py-24">
+    <section id="top" className="py-24">
       <h2 className="text-2xl md:text-3xl font-bold text-center">
         Top
       </h2>

@@ -20,6 +20,15 @@ export default function Header() {
     };
   }, [isMenuOpen]);
 
+  // 各メニューリンクの設定
+  const menuItems = [
+    { text: 'Top', href: '/#top' },
+    { text: '料金プラン', href: '/#price' },
+    { text: 'Byeバイトの特徴', href: '/#features' },
+    { text: 'サービスの流れ', href: '/#flow' },
+    { text: 'よくある質問', href: '/#faq' },
+  ];
+
   return (
     <>
       <nav className="md:fixed w-full bg-white shadow-md z-10 md:flex md:items-center md:justify-between">
@@ -46,13 +55,13 @@ export default function Header() {
 
           {/* メニュー（デスクトップ版） */}
           <div className="hidden md:flex space-x-4">
-            {['Top', '料金プラン', 'Byeバイトの特徴', 'サービスの流れ'].map((text, index) => (
+            {menuItems.map((item, index) => (
               <a
                 key={index}
-                href={`/#section${index + 1}`}
+                href={item.href}
                 className="bg-red-500 text-white hover:bg-red-400 transition rounded-full px-4 py-2 text-sm font-semibold shadow"
               >
-                {text}
+                {item.text}
               </a>
             ))}
           </div>
@@ -74,14 +83,14 @@ export default function Header() {
           <FiX size={32} />
         </button>
 
-        {['Top', '料金プラン', 'Byeバイトの特徴', 'サービスの流れ'].map((text, index) => (
+        {menuItems.map((item, index) => (
           <a
             key={index}
-            href={`/#section${index + 1}`}
+            href={item.href}
             className="text-lg font-semibold hover:underline"
             onClick={() => setIsMenuOpen(false)}
           >
-            {text}
+            {item.text}
           </a>
         ))}
       </div>
