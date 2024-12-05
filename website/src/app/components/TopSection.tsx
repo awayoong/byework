@@ -3,19 +3,23 @@ import Image from "next/image";
 
 export default function TopSection() {
   return (
-    <section id="top" className="py-24">
-      <h2 className="text-2xl md:text-3xl font-bold text-center">
-        Top
-      </h2>
-      <p className="text-lg text-center my-8">アルバイト退職を専門にサポートします。</p>
+    <section id="top" className="py-8">
       <div className="flex flex-col items-center">
-        <Image
-          src={"/images/ヤメオ_バイバイト.jpg"}
-          alt="ヤメオの画像"
-          width={500}
-          height={300}
-          className="rounded-lg shadow-lg"
-        />
+        <picture>
+          {/* 画面幅が狭い場合の画像 */}
+          <source
+            srcSet="/images/Top_narrow.png"
+            media="(max-width: 768px)"
+          />
+          {/* デフォルト（画面幅が広い場合）の画像 */}
+          <Image
+            src="/images/Top_wide.png"
+            alt="Top画像"
+            width={1080}
+            height={720}
+            className="rounded-lg shadow-lg"
+          />
+        </picture>
       </div>
     </section>
   );

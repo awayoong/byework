@@ -5,6 +5,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import FlowSection from "./components/FlowSection";
 import FloatingButton from "./components/FloatingButton";
 import FaqSection from "./components/FaqSection";
+import CompareSection from "./components/CompareSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <FlowSection />
       <FloatingButton />
       <FaqSection />
+      <CompareSection />
     </div>
   );
 }

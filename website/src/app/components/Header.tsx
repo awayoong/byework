@@ -27,6 +27,7 @@ export default function Header() {
     { text: 'Byeバイトの特徴', href: '/#features' },
     { text: 'サービスの流れ', href: '/#flow' },
     { text: 'よくある質問', href: '/#faq' },
+    { text: 'サービス比較', href: '/#compare' },
   ];
 
   return (
