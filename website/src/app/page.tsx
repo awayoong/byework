@@ -13,10 +13,10 @@ export default function Home() {
       <TopSection />
       <PricingSection />
       <FeaturesSection />
+      <CompareSection />
       <FlowSection />
       <FloatingButton />
       <FaqSection />
-      <CompareSection />
     </div>
   );
 }

@@ -29,6 +29,9 @@ export default function FlowSection() {
         <h2 className="text-2xl md:text-3xl font-bold text-center">
           退職代行サービスの流れ
         </h2>
+        <p className="mt-8 text-xl md:text-2xl text-center font-bold text-red-500">
+          簡単4ステップ！👇️
+        </p>
         <div className="space-y-8">
           {steps.map((step, index) => (
             <div

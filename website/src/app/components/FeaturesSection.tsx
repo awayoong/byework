@@ -33,6 +33,16 @@ export default function FeaturesSection() {
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-red-500 text-xl mr-3" />
+              <h3 className="text-xl font-semibold">別料金は一切なし</h3>
+            </div>
+            <p className="text-base text-gray-600">
+              ご依頼料以外には一切料金は発生しません。
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+            <div className="flex items-center mb-4">
+              <FaCheckCircle className="text-red-500 text-xl mr-3" />
               <h3 className="text-xl font-semibold">即日退職可能</h3>
             </div>
             <p className="text-base text-gray-600">
