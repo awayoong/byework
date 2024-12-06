@@ -1,7 +1,6 @@
 import React from "react";
 import { FaCcVisa, FaCcMastercard, FaCcAmex, FaGooglePay, FaApple, FaRegSmile } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
-import { FaBriefcase } from "react-icons/fa";
 
 export default function PricingSection() {
   return (

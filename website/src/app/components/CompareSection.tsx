@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaUserTie, FaBalanceScale, FaUsers, FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { FaUserTie, FaBalanceScale, FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export default function CompareSection() {
   return (

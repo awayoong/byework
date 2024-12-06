@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
+import Link from 'next/link';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function Header() {
       <nav className="md:fixed w-full bg-white shadow-md z-10 md:flex md:items-center md:justify-between">
         <div className="container mx-auto p-4 flex items-center justify-between">
           {/* ロゴ */}
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/images/Byeバイト_ロゴ.png"
               alt="Byeバイトのロゴ"
@@ -43,7 +44,7 @@ export default function Header() {
               height={120}
               className="h-auto w-auto"
             />
-          </a>
+          </Link>
 
           {/* ハンバーガーメニュー */}
           <button
@@ -57,13 +58,13 @@ export default function Header() {
           {/* メニュー（デスクトップ版） */}
           <div className="hidden md:flex space-x-4">
             {menuItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href={item.href}
                 className="bg-red-500 text-white hover:bg-red-400 transition rounded-full px-4 py-2 text-sm font-semibold shadow"
               >
                 {item.text}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -85,14 +86,14 @@ export default function Header() {
         </button>
 
         {menuItems.map((item, index) => (
-          <a
+          <Link
             key={index}
             href={item.href}
             className="text-lg font-semibold hover:underline"
             onClick={() => setIsMenuOpen(false)}
           >
             {item.text}
-          </a>
+          </Link>
         ))}
       </div>
     </>

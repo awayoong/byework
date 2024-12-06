@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // output: 'export',
-  // basePath: '/<byework>',
-  // assetPrefix: '/<byework>/',
+  output: 'export',
+  basePath: '/byework',
+  assetPrefix: '/byework/',
+  trailingSlash: true,
+  images: {
+    unoptimized: true, // GitHub PagesはImage Optimizationをサポートしないため
+  },
 };
 
 export default nextConfig;
