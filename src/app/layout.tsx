@@ -1,12 +1,13 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import React from 'react';
-import Header from './components/Header';
-import { notoJP, mPlus1p } from './utiles/fonts';
+import "./globals.css";
+import type { Metadata } from "next";
+import React from "react";
+import Header from "./components/Header";
+import { notoJP, mPlus1p } from "./utiles/fonts";
 
 export const metadata: Metadata = {
-  title: '退職代行Byeバイト | アルバイト専門',
-  description: 'アルバイト専門！退職代行Byeバイトの公式ホームページです。学割実施中！',
+  title: "退職代行Byeバイト | アルバイト専門",
+  description:
+    "アルバイト専門！退職代行Byeバイトの公式ホームページです。学割実施中！",
 };
 
 export default function RootLayout({

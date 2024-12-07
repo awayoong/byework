@@ -8,8 +8,12 @@ export default function FloatingButton() {
       <div className="relative bg-white p-4 rounded-lg shadow-2xl max-w-xs md:max-w-sm">
         {/* 内容 */}
         <div className="text-center">
-          <p className="text-sm md:text-base font-bold mb-1">受付時間 9時-24時</p>
-          <p className="text-xs md:text-sm mb-3">お気軽にお問い合わせください。</p>
+          <p className="text-sm md:text-base font-bold mb-1">
+            受付時間 9時-24時
+          </p>
+          <p className="text-xs md:text-sm mb-3">
+            お気軽にお問い合わせください。
+          </p>
           <a
             href="https://line.me/R/ti/p/@540amcfs?oat_content=url"
             target="_blank"
@@ -30,7 +34,9 @@ export default function FloatingButton() {
           height={120}
           className="rounded-full shadow-lg md:w-24 md:h-24" // レスポンシブ対応
         />
-        <p className="text-center text-sm md:text-base font-bold mb-1">ヤメ子</p>
+        <p className="text-center text-sm md:text-base font-bold mb-1">
+          ヤメ子
+        </p>
       </div>
     </div>
   );

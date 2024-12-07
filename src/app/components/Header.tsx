@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { FiMenu, FiX } from 'react-icons/fi';
-import Link from 'next/link';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { FiMenu, FiX } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,24 +11,24 @@ export default function Header() {
   // メニューの状態変更時にスクロール制御
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
 
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
   }, [isMenuOpen]);
 
   // 各メニューリンクの設定
   const menuItems = [
-    { text: 'Top', href: '/#top' },
-    { text: '料金プラン', href: '/#price' },
-    { text: 'Byeバイトの特徴', href: '/#features' },
-    { text: 'サービス比較', href: '/#compare' },
-    { text: 'サービスの流れ', href: '/#flow' },
-    { text: 'よくある質問', href: '/#faq' },
+    { text: "Top", href: "/#top" },
+    { text: "料金プラン", href: "/#price" },
+    { text: "Byeバイトの特徴", href: "/#features" },
+    { text: "サービス比較", href: "/#compare" },
+    { text: "サービスの流れ", href: "/#flow" },
+    { text: "よくある質問", href: "/#faq" },
   ];
 
   return (
@@ -50,7 +50,7 @@ export default function Header() {
           <button
             className="md:hidden text-white bg-red-500 hover:bg-red-400 transition rounded-full p-2 focus:outline-none shadow-lg fixed top-4 right-4 z-10"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? 'メニューを閉じる' : 'メニューを開く'}
+            aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"}
           >
             {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
           </button>
@@ -73,7 +73,9 @@ export default function Header() {
       {/* メニュー（モバイル版） */}
       <div
         className={`fixed inset-0 bg-gradient-to-br from-red-300 to-red-600 text-white flex flex-col items-center justify-center space-y-6 z-20 transform transition-all duration-300 ${
-          isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+          isMenuOpen
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-full opacity-0 pointer-events-none"
         }`}
       >
         {/* 閉じるボタン */}

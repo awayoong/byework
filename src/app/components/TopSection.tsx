@@ -7,10 +7,7 @@ export default function TopSection() {
       <div className="flex flex-col items-center">
         <picture>
           {/* 画面幅が狭い場合の画像 */}
-          <source
-            srcSet="/images/Top_narrow.png"
-            media="(max-width: 768px)"
-          />
+          <source srcSet="/images/Top_narrow.png" media="(max-width: 768px)" />
           {/* デフォルト（画面幅が広い場合）の画像 */}
           <Image
             src="/images/Top_wide.png"

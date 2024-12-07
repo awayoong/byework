@@ -1,12 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import { FaUserTie, FaBalanceScale, FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import {
+  FaUserTie,
+  FaBalanceScale,
+  FaCheckCircle,
+  FaTimesCircle,
+} from "react-icons/fa";
 
 export default function CompareSection() {
   return (
     <section id="compare" className="py-24">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">サービス比較</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
+          サービス比較
+        </h2>
         <div className="overflow-x-auto">
           <table className="table-auto w-full border-collapse rounded-lg shadow-lg">
             <thead>
@@ -76,7 +83,9 @@ export default function CompareSection() {
                         さらに安い！
                       </span>
                       <br />
-                      <span className="text-2xl font-bold text-red-500">5,000</span>
+                      <span className="text-2xl font-bold text-red-500">
+                        5,000
+                      </span>
                       <span className="text-sm">円</span>
                     </span>
                   </div>
@@ -108,13 +117,17 @@ export default function CompareSection() {
                 <td className="border px-6 py-4 text-center">
                   <div className="flex flex-col items-center">
                     <FaTimesCircle className="text-red-500" />
-                    <span className="mt-2 text-base">退職後の対応に別料金が発生する可能性あり</span>
+                    <span className="mt-2 text-base">
+                      退職後の対応に別料金が発生する可能性あり
+                    </span>
                   </div>
                 </td>
                 <td className="border px-6 py-4 text-center">
                   <div className="flex flex-col items-center">
                     <FaTimesCircle className="text-red-500" />
-                    <span className="mt-2 text-base">相談時間に応じて追加料金発生の可能性あり</span>
+                    <span className="mt-2 text-base">
+                      相談時間に応じて追加料金発生の可能性あり
+                    </span>
                   </div>
                 </td>
               </tr>

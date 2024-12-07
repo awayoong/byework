@@ -10,7 +10,6 @@ export default function FeaturesSection() {
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-red-500 text-xl mr-3" />
@@ -73,7 +72,9 @@ export default function FeaturesSection() {
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
             <div className="flex items-center mb-4">
               <FaCheckCircle className="text-red-500 text-xl mr-3" />
-              <h3 className="text-xl font-semibold">試用期間、研修中も対応可能</h3>
+              <h3 className="text-xl font-semibold">
+                試用期間、研修中も対応可能
+              </h3>
             </div>
             <p className="text-base text-gray-600">
               試用期間や研修中でも退職代行サービスを提供します。

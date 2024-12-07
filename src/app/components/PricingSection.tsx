@@ -1,5 +1,12 @@
 import React from "react";
-import { FaCcVisa, FaCcMastercard, FaCcAmex, FaGooglePay, FaApple, FaRegSmile } from "react-icons/fa";
+import {
+  FaCcVisa,
+  FaCcMastercard,
+  FaCcAmex,
+  FaGooglePay,
+  FaApple,
+  FaRegSmile,
+} from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 
 export default function PricingSection() {
@@ -33,7 +40,9 @@ export default function PricingSection() {
           <div className="absolute top-4 right-4 w-16 h-16 bg-yellow-200 rounded-full flex items-center justify-center">
             <FaRegSmile className="text-yellow-600 text-3xl" />
           </div>
-          <h3 className="text-3xl font-bold text-yellow-500 mb-4">一般プラン</h3>
+          <h3 className="text-3xl font-bold text-yellow-500 mb-4">
+            一般プラン
+          </h3>
           <p className="text-4xl font-bold mb-4">
             ¥8,000 <span className="text-lg text-gray-500">+ 税</span>
           </p>
@@ -49,7 +58,8 @@ export default function PricingSection() {
           クレジットカード、電子マネーなど豊富な決済手段に対応しています。
         </p>
         <div className="flex flex-wrap justify-center items-center gap-6">
-          {[{ Icon: FaCcVisa, label: "VISA" },
+          {[
+            { Icon: FaCcVisa, label: "VISA" },
             { Icon: FaCcMastercard, label: "MasterCard" },
             { Icon: FaCcAmex, label: "Amex" },
             { Icon: FaGooglePay, label: "Google Pay" },
