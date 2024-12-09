@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
 
@@ -37,8 +36,8 @@ export default function Header() {
         <div className="container mx-auto p-4 flex items-center justify-between">
           {/* ロゴ */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/images/Byeバイト_ロゴ.png"
+            <img
+              src="/public/images/Byeバイト_ロゴ.png"
               alt="Byeバイトのロゴ"
               width={120}
               height={120}

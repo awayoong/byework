@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export default function FloatingButton() {
   return (
@@ -27,8 +26,8 @@ export default function FloatingButton() {
 
       {/* マスコット画像 */}
       <div className="flex-shrink-0">
-        <Image
-          src={"/images/ヤメ子_バイバイト.jpg"}
+        <img
+          src={"/public/images/ヤメ子_バイバイト.jpg"}
           alt="ヤメ子画像"
           width={120} // 基本サイズ
           height={120}

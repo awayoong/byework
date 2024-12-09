@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import {
   FaUserTie,
   FaBalanceScale,
@@ -20,8 +20,8 @@ export default function CompareSection() {
               <tr>
                 <th className="bg-white min-w-36"></th>
                 <th className="border-r bg-red-50 border-b px-6 py-4 text-center min-w-64">
-                  <Image
-                    src="/images/Byeバイト_ロゴ.png"
+                  <img
+                    src="/public/images/Byeバイト_ロゴ.png"
                     alt="Byeバイト ロゴ"
                     width={100}
                     height={80}
